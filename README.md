@@ -16,9 +16,11 @@ The **AuditEval** framework is built to systematically assess LLMs on various au
 The framework includes 8 main tasks and 32 sub-tasks, spanning across multiple knowledge areas such as accounting, law, and taxation. Each task is associated with specific metrics (e.g., accuracy, ROUGE, BLEU, etc.), and performance is evaluated based on both **task difficulty** and **answer openness**.
 
 ## Task table
-| **Dimension**                | **Task**                        | **Subtask Name**                             | **Metric**               | **Models Evaluated**                        |
+|               **Task Domain**                 |                 **Data Domain**                       |                     **Metric Domain**                                 |
+| **Task Dimension**  | **Task** | **SubTask**  |   **Dataset Size**   |     **Source of Data**         | **Quantitative Metric**   |   **Task Difficulty**  |**Answer Openness**|
 |------------------------------|----------------------------------|----------------------------------------------|--------------------------|---------------------------------------------|
-| **Professional Knowledge**    | Multiple-choice & True/False    | Conceptual Multiple-Choice (CM-C)            | Accuracy, F1             | Qwen2.5-7B, Meta-Llama-3.1-8B, GPT-4, etc. |
+| **Professional Knowledge**   | Multiple-choice & True/False    | Conceptual Multiple-Choice (CM-C)            | Accuracy, F1             | Qwen2.5-7B, Meta-Llama-3.1-8B, GPT-4, etc. |
+|                              |                                  | True-False Questions (TF)                    | Accuracy, F1             | Qwen3-8B, AuditWen, DeepSeek-R1            |
 |                              |                                  | Numerical Calculation Multiple-Choice (NCM-C)| Accuracy, F1             | Qwen3-8B, AuditWen, DeepSeek-R1            |
 |                              | Automatic QA                    | Audit Standards (AS)                         | ROUGE, BF1               | GPT-4, DeepSeek-V3, AuditWen              |
 |                              |                                  | Audit Concepts (AConcept)                   | ROUGE, BF1               | Meta-Llama, Qwen3-8B, GPT-4                |
