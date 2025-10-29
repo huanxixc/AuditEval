@@ -16,19 +16,10 @@ The **AuditEval** framework is built to systematically assess LLMs on various au
 The framework includes 8 main tasks and 32 sub-tasks, spanning across multiple knowledge areas such as accounting, law, and taxation. Each task is associated with specific metrics (e.g., accuracy, ROUGE, BLEU, etc.), and performance is evaluated based on both **task difficulty** and **answer openness**.
 
 ## Task table
-|               **Task Domain**                 |                 **Data Domain**                       |                     **Metric Domain**                                 |
-| **Task Dimension**  | **Task** | **SubTask**  |   **Dataset Size**   |     **Source of Data**         | **Quantitative Metric**   |   **Task Difficulty**  |**Answer Openness**|
-|------------------------------|----------------------------------|----------------------------------------------|--------------------------|---------------------------------------------|
-| **Professional Knowledge**   | Multiple-choice & True/False    | Conceptual Multiple-Choice (CM-C)            | Accuracy, F1             | Qwen2.5-7B, Meta-Llama-3.1-8B, GPT-4, etc. |
-|                              |                                  | True-False Questions (TF)                    | Accuracy, F1             | Qwen3-8B, AuditWen, DeepSeek-R1            |
-|                              |                                  | Numerical Calculation Multiple-Choice (NCM-C)| Accuracy, F1             | Qwen3-8B, AuditWen, DeepSeek-R1            |
-|                              | Automatic QA                    | Audit Standards (AS)                         | ROUGE, BF1               | GPT-4, DeepSeek-V3, AuditWen              |
-|                              |                                  | Audit Concepts (AConcept)                   | ROUGE, BF1               | Meta-Llama, Qwen3-8B, GPT-4                |
-| **Practical Application**     | Audit NER                       | Three-Entities Classification (T-EC)         | F1                       | AuditWen, DeepSeek-R1, Qwen3-8B           |
-|                              |                                  | Seven-Entities Classification (S-EC)         | F1                       | DeepSeek-V3, GPT-4                        |
-|                              | Audit Phrase Classification (APC) | Audit Entity Classification (AEC)           | Accuracy, F1             | Qwen3-8B, DeepSeek-V3, AuditWen          |
-| **Academic Expression**       | Move Recognition                | —                                            | Accuracy                 | DeepSeek-V3, Qwen3-8B, GPT-4              |
-|                              | Bilingual Translation (ZH-EN)   | Title Translation (TT)                       | BLEU, F1                 | Qwen3-8B, DeepSeek-V3, GPT-4              |
+|               **Task Domain**                 |                 **Data Domain**                       |                      **Metric Domain**                                 |
+| **Task<br>Dimension**  | **Task** | **SubTask**  |   **Dataset**<br>**Size**   |     **Source of Data**         | **Quantitative<br>Metric**   |   **Task<br>Difficulty**  |**Answer<br>Openness**|
+|---------------------|----------|--------------|----------------------|--------------------------------|-------------- ------------|------------------------|-------------------|
+
 
 ### Model Evaluation
 
