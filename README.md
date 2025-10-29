@@ -16,27 +16,38 @@ The **AuditEval** framework is built to systematically assess LLMs on various au
 The framework includes 8 main tasks and 32 sub-tasks, spanning across multiple knowledge areas such as accounting, law, and taxation. Each task is associated with specific metrics (e.g., accuracy, ROUGE, BLEU, etc.), and performance is evaluated based on both **task difficulty** and **answer openness**.
 
 ## Task table
-|               **Task Domain**                 |                 **Data Domain**                       |                      **Metric Domain**                                 |
-| **Task<br>Dimension**  | **Task** | **SubTask**  |   **Dataset**<br>**Size**   |     **Source of Data**         | **Quantitative<br>Metric**   |   **Task<br>Difficulty**  |**Answer<br>Openness**|
-|---------------------|----------|--------------|----------------------|--------------------------------|-------------- ------------|------------------------|-------------------|
-| **Professional<br>Knowledge**   | Multiple-choice & True/False    | Conceptual Multiple-Choice (CM-C)            | Accuracy, F1             | Qwen2.5-7B, Meta-Llama-3.1-8B, GPT-4, etc. |
-|                              |                                  | True-False Questions (TF)                    | Accuracy, F1             | Qwen3-8B, AuditWen, DeepSeek-R1            |
-|                              |                                  | Numerical Calculation Multiple-Choice (NCM-C)| Accuracy, F1             | Qwen3-8B, AuditWen, DeepSeek-R1            |
-|                              | Automatic QA                    | Audit Standards (AS)                         | ROUGE, BF1               | GPT-4, DeepSeek-V3, AuditWen              |
-|                              |                                  | Audit Concepts (AConcept)                   | ROUGE, BF1               | Meta-Llama, Qwen3-8B, GPT-4                |
-| **Practical<br>Application**     | Audit NER                       | Three-Entities Classification (T-EC)         | F1                       | AuditWen, DeepSeek-R1, Qwen3-8B           |
-|                              |                                  | Seven-Entities Classification (S-EC)         | F1                       | DeepSeek-V3, GPT-4                        |
-|                              | Audit Phrase Classification (APC) | Audit Entity Classification (AEC)           | Accuracy, F1             | Qwen3-8B, DeepSeek-V3, AuditWen          |
-| **Academic<br>Expression**       | Move Recognition                | —                                            | Accuracy                 | DeepSeek-V3, Qwen3-8B, GPT-4              |
-|                              | Bilingual Translation (ZH-EN)   | Title Translation (TT)                       | BLEU, F1                 | Qwen3-8B, DeepSeek-V3, GPT-4              |
+<table>
+    <tr>
+        <td colspan="3">Task Domain</td> 
+        <td colspan="2">Data Domain</td> 
+        <td colspan="3">Metric Domain</td> 
+   </tr>
+    <tr>
+  		  <td>Task Dimension</td> 
+        <td>Task</td>    
+        <td>SubTask</td> 
+        <td>Dataset Size</td> 
+        <td>Source of Data</td>
+        <td>Quantitative Metric</td>
+        <td>Task Difficulty</td>
+        <td>Answer Openness</td>
+    </tr>
+    <tr>
+        <td>跨三列合并行</td> 
+        <td>跨三列合并行</td>
+        <td>跨三列合并行</td>
+        <td>跨三列合并行</td>
+        <td>跨三列合并行</td>
+        <td>跨三列合并行</td>
+        <td>跨三列合并行</td>
+        <td>跨三列合并行</td>
+    </tr>
+</table>
 
-### Benchmark 
+
+### AuditWen Benchmark 
 <div align="center">
-
 ![Fig 2: AuditWen Benchmark](https://github.com/huanxixc/AuditEval/raw/main/figures/Fig.2.png)
-
-*Figure 2: Model throughput and accuracy across increasing audit report volumes. The model maintains >93% accuracy up to 10,000 reports.*
-
 </div>
 
 ## Model Evaluation
@@ -56,7 +67,35 @@ You can download the models used in the evaluation from the following links:
 - **DeepSeek-R1**: [https://huggingface.co/deepseek-ai/DeepSeek-R1](https://huggingface.co/deepseek-ai/DeepSeek-R1)
 - **GPT-4**: Closed-Source · API Access Required
 
-### Evaluation Results
+## Evaluation Results
+### Professional Knowledge Tasks
+
+In the **Professional Knowledge** dimension, models were evaluated on tasks like multiple-choice questions, true/false questions, and automatic question answering (QA). The results show that larger models generally perform better, but **AuditWen**, a domain-specific fine-tuned model, showed strong performance across multiple subtasks. **DeepSeek-R1** outperformed other models in numerical calculation tasks, achieving the highest accuracy.
+
+- **AuditWen** excelled in answering auditing standards and concepts, demonstrating the effectiveness of domain-specific fine-tuning.
+- **DeepSeek-R1** showed strong performance in reasoning tasks due to its large-scale parameters and sophisticated training.
+
+### Practical Application Tasks
+
+For the **Practical Application** dimension, models were evaluated on tasks such as entity recognition, audit phrase classification, and issue qualification. Here, **AuditWen** performed exceptionally well, thanks to its fine-tuning on auditing-specific datasets. Models like **Qwen3-8B** also showed strong results in classification tasks.
+
+- **AuditWen** dominated entity recognition tasks, performing well in recognizing and classifying entities relevant to auditing.
+- **DeepSeek-R1** performed well in audit issue qualification, leveraging its large model size and refined training.
+
+### Academic Expression Tasks
+
+In the **Academic Expression** dimension, models were evaluated on tasks like move recognition and bilingual translation. **DeepSeek-V3** performed the best in move recognition tasks, accurately classifying academic moves in audit-related texts. **Qwen3-8B** performed well in bilingual translation tasks, particularly in translating auditing terms.
+
+- **DeepSeek-V3** demonstrated superior accuracy in move recognition, outperforming all other models.
+- **Qwen3-8B** and **DeepSeek-V3** performed well in bilingual translation tasks, showing high alignment with reference translations in both Chinese-to-English and English-to-Chinese tasks.
+
+### Final Model Performance
+
+The overall model performance was aggregated across all tasks, considering both task difficulty and answer openness. **DeepSeek-R1** ranked the highest overall, especially in more complex, reasoning-based tasks, followed by **AuditWen**, which showed strong results in auditing-specific tasks due to its domain-focused fine-tuning.
+
+- **DeepSeek-R1** performed well in high-difficulty tasks, benefiting from its large parameter size and complex reasoning abilities.
+- **AuditWen** was particularly effective in practical auditing applications, such as entity recognition and issue qualification, where domain-specific knowledge was critical.
+- **Qwen3-8B** demonstrated solid performance across all tasks, with particular strengths in bilingual translation and professional knowledge tasks.
 
 ## Quick Start
 
