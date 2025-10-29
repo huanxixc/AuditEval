@@ -32,7 +32,11 @@ The framework includes 8 main tasks and 32 sub-tasks, spanning across multiple k
 
 ### Benchmark 
 <div align="center">
-![Fig 2](https://github.com/huanxixc/AuditEval/raw/main/figures/Fig.2.png)
+
+![Fig 2: AuditWen Benchmark](https://github.com/huanxixc/AuditEval/raw/main/figures/Fig.2.png)
+
+*Figure 2: Model throughput and accuracy across increasing audit report volumes. The model maintains >93% accuracy up to 10,000 reports.*
+
 </div>
 
 ## Model Evaluation
