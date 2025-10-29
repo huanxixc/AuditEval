@@ -33,14 +33,14 @@ The framework includes 8 main tasks and 32 sub-tasks, spanning across multiple k
         <td>Answer Openness</td>
     </tr>
     <tr>
-        <td>跨三列合并行</td> 
-        <td>跨三列合并行</td>
-        <td>跨三列合并行</td>
-        <td>跨三列合并行</td>
-        <td>跨三列合并行</td>
-        <td>跨三列合并行</td>
-        <td>跨三列合并行</td>
-        <td>跨三列合并行</td>
+        <td>Professional Knowledge</td> 
+        <td>Multiple-choice & True-False questions (MCTF)</td>
+        <td>Conceptual Multiple-Choice (CM-C)</td>
+        <td>361</td>
+        <td>Auditor Question Bank</td>
+        <td>ACC</td>
+        <td>L1</td>
+        <td>low</td>
     </tr>
 </table>
 
