@@ -31,7 +31,9 @@ The framework includes 8 main tasks and 32 sub-tasks, spanning across multiple k
 |                              | Bilingual Translation (ZH-EN)   | Title Translation (TT)                       | BLEU, F1                 | Qwen3-8B, DeepSeek-V3, GPT-4              |
 
 ### Benchmark 
-<img width="624" height="360" alt="Fig 2" src="https://github.com/user-attachments/assets/d16fa4ac-8220-4819-ae9a-9eddbeaa3087" />
+<div align="center">
+![Fig 2](https://github.com/user-attachments/assets/d16fa4ac-8220-4819-ae9a-9eddbeaa3087)
+</div>
 
 ## Model Evaluation
 
