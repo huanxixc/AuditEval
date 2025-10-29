@@ -32,7 +32,7 @@ The framework includes 8 main tasks and 32 sub-tasks, spanning across multiple k
 
 ### Benchmark 
 <div align="center">
-![Fig 2](https://github.com/huanxixc/AuditEval/figures/Fig.2.png)
+![Fig 2](https://github.com/huanxixc/AuditEval/raw/main/figures/Fig.2.png)
 </div>
 
 ## Model Evaluation
