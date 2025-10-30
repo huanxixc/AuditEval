@@ -40,7 +40,7 @@ The framework includes 8 main tasks and 32 sub-tasks, spanning across multiple k
   <tr>
     <td rowspan="8">Professional Knowledge</td>
 
-    <!-- MCTF -->
+<!-- MCTF -->
 <td rowspan="3">Multiple-choice & True-False questions (MCTF)</td>
 <td>Conceptual Multiple-Choice (CM-C)</td>
 <td>361</td>
@@ -102,7 +102,7 @@ The framework includes 8 main tasks and 32 sub-tasks, spanning across multiple k
   <tr>
     <td rowspan="13">Practical Application Ability</td>
 
-    <!-- NER -->
+<!-- NER -->
 <td rowspan="3">Audit NER (NER)</td>
 <td>Three-Entities Classification (T-EC)</td>
 <td>1384</td>
@@ -197,7 +197,7 @@ The framework includes 8 main tasks and 32 sub-tasks, spanning across multiple k
   <tr>
     <td rowspan="5">Academic Expression Ability</td>
 
-    <!-- MR -->
+<!-- MR -->
 <td>Move Recognition (MR)</td>
 <td>——</td>
 <td>594</td>
