@@ -141,7 +141,6 @@ The framework includes 8 main tasks and 32 sub-tasks, spanning across multiple k
   <tr>
     <td>Audit Legal Name Classification (ALNC)</td>
     <td>218</td>
-    <td>Authoritative Literature in the Auditing Domain、Baidu Encyclopedia Entries</td>
     <td>L1</td>
     <td>low</td>
   </tr>
