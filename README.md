@@ -95,12 +95,6 @@ The framework includes 8 main tasks and 32 sub-tasks, spanning across multiple k
 # Statistical Result of Auditing Evaluation Benchmark for LLMs
 <table>
   <tr>
-    <td colspan="8" style="text-align:center; font-weight:bold; color:red; border:none;">
-      Statistical result of auditing evaluation benchmark for LLMs.
-    </td>
-  </tr>
-
-  <tr>
     <th colspan="3">Task Domain</th>
     <th colspan="2">Data Domain</th>
     <th colspan="3">Metric Domain</th>
