@@ -205,8 +205,10 @@ The framework includes 8 main tasks and 32 sub-tasks, spanning across multiple k
 <td>ACC</td>
 <td>L2</td>
 <td>low</td>
-
+  </tr>
+  
   <!-- BT -->
+  <tr>
   <td rowspan="4">Bilingual Translation (BT)</td>
   <td>Title Translation (TT) (ZH-EN / EN-ZH)</td>
   <td>752</td>
