@@ -16,85 +16,80 @@ The **AuditEval** framework is built to systematically assess LLMs on various au
 The framework includes 8 main tasks and 32 sub-tasks, spanning across multiple knowledge areas such as accounting, law, and taxation. Each task is associated with specific metrics (e.g., accuracy, ROUGE, BLEU, etc.), and performance is evaluated based on both **task difficulty** and **answer openness**.
 
 ## Task table
-<table border="1" cellpadding="5" cellspacing="0">
-  <thead>
+<table>
+<capital>Statistical result of auditing evaluation benchmark for LLMs.</capital>
     <tr>
-      <th rowspan="2">Task Dimension</th>
-      <th rowspan="2">Task</th>
-      <th rowspan="2">SubTask</th>
-      <th rowspan="2">Dataset Size</th>
-      <th rowspan="2">Source of Data</th>
-      <th colspan="3">Metric Domain</th>
-      <th rowspan="2">Answer Openness</th>
+        <td colspan="3">Task Domain</td> 
+        <td colspan="2">Data Domain</td> 
+        <td colspan="3">Metric Domain</td> 
+   </tr>
+    <tr>
+  		<td>Task Dimension</td> 
+        <td>Task</td>    
+        <td>SubTask</td> 
+        <td>Dataset Size</td> 
+        <td>Source of Data</td>
+        <td>Quantitative Metric</td>
+        <td>Task Difficulty</td>
+        <td>Answer Openness</td>
     </tr>
     <tr>
-      <th>Quantitative Metric</th>
-      <th>Task Difficulty</th>
-      <th>Metrics</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td rowspan="4">Professional Knowledge</td>
-      <td rowspan="4">Multiple-choice & True-False questions (MCTF)</td>
-      <td>Conceptual Multiple-Choice (CM-C)</td>
-      <td>361</td>
-      <td>Auditor Question Bank</td>
-      <td>ACC</td>
-      <td>L1</td>
-      <td>low</td>
+        <td rowspan=2>Professional Knowledge</td> 
+        <td rowspan=3>Multiple-choice & True-False questions (MCTF)</td>
+        <td>Conceptual Multiple-Choice (CM-C)</td>
+        <td>361</td>
+        <td rowspan=3>Auditor Question Bank</td>
+        <td rowspan=3>ACC</td>
+        <td>L1</td>
+        <td>low</td>
     </tr>
     <tr>
-      <td>True-False Questions (TF)</td>
-      <td>115</td>
-      <td>Auditor Question Bank</td>
-      <td>ACC</td>
-      <td>L2</td>
-      <td>low</td>
+        <td>True-False Questions (TF)</td>
+        <td>115</td>
+        <td>L2</td>
+        <td>low</td>
     </tr>
     <tr>
-      <td>Numerical Calculation (NC-M)</td>
-      <td>34</td>
-      <td>GPT-Generated</td>
-      <td>ACC</td>
-      <td>L1</td>
-      <td>low</td>
+        <td>Numerical Calculation Multiple-Choice (NCM-C)</td>
+        <td>34</td>
+        <td>L1</td>
+        <td>low</td>
     </tr>
     <tr>
-      <td>Multiple-Choice (NC-M)</td>
-      <td>34</td>
-      <td>GPT-Generated</td>
-      <td>ACC</td>
-      <td>L1</td>
-      <td>low</td>
+        <td rowspan=3>Automatic QA (AQA)</td>
+        <td>Audit Standards (AS)</td>
+        <td>2843</td>
+        <td rowspan=2>GPT-Generated</td>
+        <td rowspan=3>ROUGE、BF1</td>
+        <td>L2</td>
+        <td>medium</td>
     </tr>
     <tr>
-      <td rowspan="6">Automatic QA (AQA)</td>
-      <td rowspan="6">Audit Regulations (AR)</td>
-      <td>Audit Concepts (AConcept)</td>
-      <td>223</td>
-      <td>Authoritative Literature in the Auditing Domain, Baidu Encyclopedia Entries</td>
-      <td>ROUGE, BF1</td>
-      <td>L1</td>
-      <td>medium</td>
+        <td>Audit Regulations (AR)</td>
+        <td>2000</td>
+        <td>L2</td>
+        <td>medium</td>
     </tr>
     <tr>
-      <td>Audit Targets (AT)</td>
-      <td>75</td>
-      <td>Authoritative Literature in the Auditing Domain</td>
-      <td>ROUGE, BF1</td>
-      <td>L2</td>
-      <td>medium</td>
+        <td>Audit Concepts (AConcept)</td>
+        <td>2237</td>
+        <td>Authoritative Literature in the Auditing Domain、Baidu Encyclopedia Entries</td>
+        <td>L1</td>
+        <td>medium</td>
     </tr>
     <tr>
-      <td>Audit Contents (AContent)</td>
-      <td>150</td>
-      <td>Authoritative Literature in the Auditing Domain</td>
-      <td>ROUGE, BF1</td>
-      <td>L2</td>
-      <td>medium</td>
+        <td>Audit Targets (AT)</td>
+        <td>75</td>
+        <td rowspan=2>Authoritative Literature in the Auditing Domain</td>
+        <td>L2</td>
+        <td>medium</td>
     </tr>
-  </tbody>
+    <tr>
+        <td>Audit Contents (AContent)</td>
+        <td>150</td>
+        <td>L2</td>
+        <td>medium</td>
+    </tr>
 </table>
 
 
