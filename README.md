@@ -93,26 +93,92 @@ The framework includes 8 main tasks and 32 sub-tasks, spanning across multiple k
 </table>
 
 # Statistical Result of Auditing Evaluation Benchmark for LLMs
+<table>
+  <tr>
+    <td colspan="8" style="text-align:center; font-weight:bold; color:red; border:none;">
+      Statistical result of auditing evaluation benchmark for LLMs.
+    </td>
+  </tr>
 
-> <span style="color:red">**Statistical result of auditing evaluation benchmark for LLMs.**</span>
+  <tr>
+    <th colspan="3">Task Domain</th>
+    <th colspan="2">Data Domain</th>
+    <th colspan="3">Metric Domain</th>
+  </tr>
 
----
+  <tr>
+    <th>Task Dimension</th>
+    <th>Task</th>
+    <th>SubTask</th>
+    <th>Dataset Size</th>
+    <th>Source of Data</th>
+    <th>Quantitative Metric</th>
+    <th>Task Difficulty</th>
+    <th>Answer Openness</th>
+  </tr>
 
-### **Professional Knowledge**
+  <!-- Professional Knowledge -->
+  <tr>
+    <td rowspan="8">Professional Knowledge</td>
 
-| Task | SubTask | Dataset Size | Source of Data | Quantitative Metric | Task Difficulty | Answer Openness |
-|------|---------|--------------|----------------|---------------------|------------------|-----------------|
-| **Multiple-choice & True-False questions (MCTF)** | Conceptual Multiple-Choice (CM-C) | 361 | Auditor Question Bank | ACC | L1 | low |
-| | True-False Questions (TF) | 115 | | | L2 | low |
-| | Numerical Calculation Multiple-Choice (NCM-C) | 34 | | | L1 | low |
+    <!-- MCTF -->
+    <td rowspan="3">Multiple-choice & True-False questions (MCTF)</td>
+    <td>Conceptual Multiple-Choice (CM-C)</td>
+    <td>361</td>
+    <td rowspan="3">Auditor Question Bank</td>
+    <td rowspan="3">ACC</td>
+    <td>L1</td>
+    <td>low</td>
+  </tr>
+  <tr>
+    <td>True-False Questions (TF)</td>
+    <td>115</td>
+    <td>L2</td>
+    <td>low</td>
+  </tr>
+  <tr>
+    <td>Numerical Calculation Multiple-Choice (NCM-C)</td>
+    <td>34</td>
+    <td>L1</td>
+    <td>low</td>
+  </tr>
 
-<br>
-
-| **Automatic QA (AQA)** | Audit Standards (AS) | 2843 | GPT-Generated | ROUGE、BF1 | L2 | medium |
-| | Audit Regulations (AR) | 2000 | | | L2 | medium |
-| | Audit Concepts (AConcept) | 2237 | Authoritative Literature in the Auditing Domain、Baidu Encyclopedia Entries | | L1 | medium |
-| | Audit Targets (AT) | 75 | Authoritative Literature in the Auditing Domain | | L2 | medium |
-| | Audit Contents (AContent) | 150 | | | L2 | medium |
+  <!-- AQA -->
+  <td rowspan="5">Automatic QA (AQA)</td>
+  <td>Audit Standards (AS)</td>
+  <td>2843</td>
+  <td rowspan="2">GPT-Generated</td>
+  <td rowspan="5">ROUGE、BF1</td>
+  <td>L2</td>
+  <td>medium</td>
+  </tr>
+  <tr>
+    <td>Audit Regulations (AR)</td>
+    <td>2000</td>
+    <td>L2</td>
+    <td>medium</td>
+  </tr>
+  <tr>
+    <td>Audit Concepts (AConcept)</td>
+    <td>2237</td>
+    <td>Authoritative Literature in the Auditing Domain、Baidu Encyclopedia Entries</td>
+    <td>L1</td>
+    <td>medium</td>
+  </tr>
+  <tr>
+    <td>Audit Targets (AT)</td>
+    <td>75</td>
+    <td rowspan="2">Authoritative Literature in the Auditing Domain</td>
+    <td>L2</td>
+    <td>medium</td>
+  </tr>
+  <tr>
+    <td>Audit Contents (AContent)</td>
+    <td>150</td>
+    <td>L2</td>
+    <td>medium</td>
+  </tr>
+</table>
 
 ### AuditWen Benchmark 
 <div align="center">
