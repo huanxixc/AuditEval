@@ -92,7 +92,27 @@ The framework includes 8 main tasks and 32 sub-tasks, spanning across multiple k
     </tr>
 </table>
 
+# Statistical Result of Auditing Evaluation Benchmark for LLMs
 
+> <span style="color:red">**Statistical result of auditing evaluation benchmark for LLMs.**</span>
+
+---
+
+### **Professional Knowledge**
+
+| Task | SubTask | Dataset Size | Source of Data | Quantitative Metric | Task Difficulty | Answer Openness |
+|------|---------|--------------|----------------|---------------------|------------------|-----------------|
+| **Multiple-choice & True-False questions (MCTF)** | Conceptual Multiple-Choice (CM-C) | 361 | Auditor Question Bank | ACC | L1 | low |
+| | True-False Questions (TF) | 115 | | | L2 | low |
+| | Numerical Calculation Multiple-Choice (NCM-C) | 34 | | | L1 | low |
+
+<br>
+
+| **Automatic QA (AQA)** | Audit Standards (AS) | 2843 | GPT-Generated | ROUGE、BF1 | L2 | medium |
+| | Audit Regulations (AR) | 2000 | | | L2 | medium |
+| | Audit Concepts (AConcept) | 2237 | Authoritative Literature in the Auditing Domain、Baidu Encyclopedia Entries | | L1 | medium |
+| | Audit Targets (AT) | 75 | Authoritative Literature in the Auditing Domain | | L2 | medium |
+| | Audit Contents (AContent) | 150 | | | L2 | medium |
 
 ### AuditWen Benchmark 
 <div align="center">
