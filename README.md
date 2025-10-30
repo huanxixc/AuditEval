@@ -164,11 +164,12 @@ The framework includes 8 main tasks and 32 sub-tasks, spanning across multiple k
     <td>L3</td>
     <td>high</td>
   </tr>  
+  
   <!-- AIQA -->
   <td rowspan="4">Audit Issue Qualitative Analysis (AIQA)</td>
   <td>Audit Matters (AM)</td>
   <td>164</td>
-  <td rowspan="3">ROUGE、BF1</td>
+  <td rowspan="4">ROUGE、BF1</td>
   <td>L2</td>
   <td>medium</td>
   </tr>
