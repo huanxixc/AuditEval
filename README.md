@@ -41,13 +41,13 @@ The framework includes 8 main tasks and 32 sub-tasks, spanning across multiple k
     <td rowspan="8">Professional Knowledge</td>
 
     <!-- MCTF -->
-    <td rowspan="3">Multiple-choice & True-False questions (MCTF)</td>
-    <td>Conceptual Multiple-Choice (CM-C)</td>
-    <td>361</td>
-    <td rowspan="3">Auditor Question Bank</td>
-    <td rowspan="3">ACC</td>
-    <td>L1</td>
-    <td>low</td>
+<td rowspan="3">Multiple-choice & True-False questions (MCTF)</td>
+<td>Conceptual Multiple-Choice (CM-C)</td>
+<td>361</td>
+<td rowspan="3">Auditor Question Bank</td>
+<td rowspan="3">ACC</td>
+<td>L1</td>
+<td>low</td>
   </tr>
   <tr>
     <td>True-False Questions (TF)</td>
