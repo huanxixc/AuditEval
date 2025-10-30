@@ -97,6 +97,144 @@ The framework includes 8 main tasks and 32 sub-tasks, spanning across multiple k
     <td>L2</td>
     <td>medium</td>
   </tr>
+
+  <!-- Practical Application Ability -->
+  <tr>
+    <td rowspan="13">Practical Application Ability</td>
+
+    <!-- NER -->
+<td rowspan="3">Audit NER (NER)</td>
+<td>Three-Entities Classification (T-EC)</td>
+<td>1384</td>
+<td rowspan="10">AuditWen</td>
+<td rowspan="3">F1</td>
+<td>L3</td>
+<td>low</td>
+  </tr>
+  <tr>
+    <td>Seven- Entities Classification (S-EC)</td>
+    <td>240</td>
+    <td>L3</td>
+    <td>low</td>
+  </tr>
+  <tr>
+    <td>Twenty- Entities Classification (Tw-EC)</td>
+    <td>300</td>
+    <td>L3</td>
+    <td>low</td>
+  </tr>
+
+  <!-- APC -->
+  <td rowspan="3">Audit Phrase Classification (APC)</td>
+  <td>Audit Entity Classification (AEC)</td>
+  <td>1573</td>
+  <td rowspan="3">ACC</td>
+  <td>L1</td>
+  <td>low</td>
+  </tr>
+  <tr>
+    <td>Audit Issue Classification (AIC)</td>
+    <td>153</td>
+    <td>L1</td>
+    <td>low</td>
+  </tr>
+  <tr>
+    <td>Audit Legal Name Classification (ALNC)</td>
+    <td>218</td>
+    <td>Authoritative Literature in the Auditing Domain、Baidu Encyclopedia Entries</td>
+    <td>L1</td>
+    <td>low</td>
+  </tr>
+  <!-- ATG -->
+  <td rowspan="3">Audit Text Generation (ATG)</td>
+  <td>Audit Issues Summary (AIS)</td>
+  <td>36</td>
+  <td rowspan="3">ROUGE、BF1</td>
+  <td>L3</td>
+  <td>high</td>
+  </tr>
+  <tr>
+    <td>Audit Materials Analysis (AMA)</td>
+    <td>96</td>
+    <td>L3</td>
+    <td>high</td>
+  </tr>
+  <tr>
+    <td>Audit Case Generation (ACG)</td>
+    <td>24</td>
+    <td>L3</td>
+    <td>high</td>
+  </tr>  
+  <!-- AIQA -->
+  <td rowspan="4">Audit Issue Qualitative Analysis (AIQA)</td>
+  <td>Audit Matters (AM)</td>
+  <td>164</td>
+  <td rowspan="3">ROUGE、BF1</td>
+  <td>L2</td>
+  <td>medium</td>
+  </tr>
+  <tr>
+    <td>Issue Manifestation (IM)</td>
+    <td>531</td>
+    <td rowspan="3">Documents Issued by the Regulatory Affairs Department of the National Audit Office</td>
+    <td>L2</td>
+    <td>medium</td>
+  </tr>
+  <tr>
+    <td>Issue Qualitative Basis (IQB)</td>
+    <td>531</td>
+    <td>L3</td>
+    <td>medium</td>
+  </tr>   
+  <tr>
+    <td>Issue Penalty Basis (IPB)</td>
+    <td>531</td>
+    <td>L3</td>
+    <td>medium</td>
+  </tr>  
+
+ <!-- Academic Expression Ability -->
+  <tr>
+    <td rowspan="5">Academic Expression Ability</td>
+
+    <!-- MR -->
+<td>Move Recognition (MR)</td>
+<td>——</td>
+<td>594</td>
+<td rowspan="4">Audit Research Journal</td>
+<td>ACC</td>
+<td>L2</td>
+<td>low</td>
+
+  <!-- BT -->
+  <td rowspan="4">Bilingual Translation (BT)</td>
+  <td>Title Translation (TT) (ZH-EN / EN-ZH)</td>
+  <td>752</td>
+  <td>BLEU、BF1</td>
+  <td>L2</td>
+  <td>low</td>
+  </tr>
+  <tr>
+    <td>Keyword Translation (TT) (ZH-EN / EN-ZH)</td>
+    <td>1513</td>
+    <td>BLEU、BF1、ACC</td>  
+    <td>L2</td>
+    <td>low</td>
+  </tr>
+  <tr>
+    <td>Abstract Translation (TT) (ZH-EN / EN-ZH)</td>
+    <td>752</td>
+    <td rowspan="2">BLEU、BF1</td>
+    <td>L2</td>
+    <td>medium</td>
+  </tr>
+  <tr>
+    <td>Legal Translation (TT) (ZH-EN / EN-ZH)</td>
+    <td>139</td>
+    <td>Bilingual Regulatory</td>
+    <td>L2</td>
+    <td>medium</td>
+  </tr>
 </table>
 
 ### AuditWen Benchmark 
